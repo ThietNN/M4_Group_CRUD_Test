@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Group</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>GroupList</h1>
+<table>
+    <tr id="groupList">
+        <td>Group name</td>
+        <td>Image</td>
+        <td>Update</td>
+        <td>Remove</td>
+    </tr>
+    <tbody id="showGroupList">
+    </tbody>
+</table>
+<form>
+    <h1>Create a new Group</h1>
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" id="name" placeholder="name"></td>
+        </tr>
+        <tr>
+            <td>Background image: </td>
+            <td><input type="file" id="backgroundImage"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button type="button" onclick="createNewGroup()">save</button></td>
+        </tr>
+    </table>
+</form>
+<div id="updateGroupInfo"></div>
+<script src="groupJS.js"></script>
+</body>
+</html>
